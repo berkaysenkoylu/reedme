@@ -1,0 +1,79 @@
+@import "../../../variables";
+
+.PostListItem {
+    cursor: pointer;
+    display: flex;
+    padding: 1rem 1rem 0 1rem;
+    background-color: $color-gray-dark;
+    transition: all 0.2s ease-out;
+    border: 1px solid rgba($color-white, 0.2);
+    position: relative;
+    z-index: 10;
+
+    &:hover {
+        border-color: rgba($color-white, 0.5);
+        z-index: 11;
+    }
+
+    &:first-child {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+
+    &:not(:first-child) {
+        margin-top: -1px;
+    }
+
+    &:last-child {
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+    &__Vote {
+        width: 40px;
+        height: 88px;
+    }
+
+    &__Content {
+        display: flex;
+
+        &__Thumbnail {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 72px;
+            width: 96px;
+            background-color: $color-grey-dark;
+
+            & > span {
+                width: 20px;
+                height: 20px;
+                background-color: $color-white;
+            }
+        }
+
+        &__Body {
+            display: flex;
+            flex-direction: column;
+            margin-left: 1rem;
+
+            &__Title {
+                color: rgba($color-white, 0.9);
+                font-size: $default-font-size;
+            }
+
+            &__Info {
+                color: rgba($color-white, 0.55);
+                font-size: 1.2rem;
+                height: 2rem;
+            }
+
+            &__Cta {
+                height: 3.6rem;
+                margin-top: auto;
+                justify-self: flex-end;
+                width: 100%;
+            }
+        }
+    }
+}
