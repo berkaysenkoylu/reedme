@@ -1,16 +1,17 @@
-import React from 'react';
+import React from "react";
 
 import classes from "./PostListItem.module.scss";
 import type { Post } from "../../../mocks/types";
 
 interface PostListItemProps {
-    postData: Post
+    postData: Post,
+    clicked: () => void
 }
 
 const PostListItem = (props: PostListItemProps) => {
-    const { postData } = props;
+    const { clicked, postData } = props;
     return (
-        <li className={classes.PostListItem}>
+        <li className={classes.PostListItem} onClick={clicked}>
             <div className={classes.PostListItem__Vote}>VOTE</div>
             <div className={classes.PostListItem__Content}>
                 <div className={classes.PostListItem__Content__Thumbnail}>

@@ -35,6 +35,7 @@
     }
 
     &__Content {
+        flex: 1;
         display: flex;
 
         &__Thumbnail {
@@ -53,6 +54,7 @@
         }
 
         &__Body {
+            flex: 1;
             display: flex;
             flex-direction: column;
             margin-left: 1rem;

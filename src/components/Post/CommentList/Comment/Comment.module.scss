@@ -1,0 +1,86 @@
+@import "../../../../variables";
+
+// TODO: make color definitions later
+.CommentContainer {
+    display: flex;
+    flex: 1;
+
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+}
+
+.LeftHandSide {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.ToggleButton {
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 5px;
+    align-self: center; // TODO: fix later
+    background-color: orangered; // TODO: remove later
+}
+
+.Avatar {
+    background-color: $color-white; // TODO: remove later
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.VerticalLine {
+    cursor: pointer;
+    flex: 1;
+    width: 2px;
+    background-color: #6F7072;
+    transform: translateX(15px);
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+        background-color: #CBCED1;
+    }
+
+    &__Hide {
+        display: none;
+    }
+}
+
+.Comment {
+    flex: 1;
+    margin-left: 0.8rem;
+    margin-right: 32px;
+
+    &__Author {
+        margin-top: 0.8rem;
+        margin-bottom: 0.6rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #6F7072;
+
+        span:first-child {
+            color: #D2D5D7;
+        }
+    }
+
+    &__Body {
+        font-size: 1.4rem;
+        color: #CBCED1;
+    }
+
+    &__Cta {
+        height: 3.8rem;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        background-color: $color-white; // TODO: remove later
+    }
+}

@@ -1,0 +1,89 @@
+@import "../../variables";
+
+$post-bg-color: #1A1A1B;
+
+// TODO: make color definitions later
+.Post {
+    position: relative;
+    background-color: $post-bg-color;
+    width: 96rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 8rem auto 0 auto;
+    padding-top: 0.8rem;
+    padding-left: 4rem;
+    height: 100vh; // TODO: remove
+
+    &__Vote {
+        background-color: orangered; // TODO: remove
+        border-top-left-radius: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4rem;
+        height: 8rem; // TODO: revisit
+    }
+
+    &__Top {
+        display: flex;
+        color: #646666;
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding: 0.8rem;
+        padding-top: 0;
+
+        span {
+            margin-left: auto;
+        }
+    }
+
+    &__Title {
+        color: #D7DADC;
+        font-size: 2rem;
+        font-weight: 400;
+        margin: 0.8rem;
+        margin-top: 0;
+    }
+
+    &__Content {
+        color: #C0C2C4;
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin-top: 1.2rem;
+        margin-left: 0.8rem;
+        padding: 0.5rem 1.6rem 0.5rem 0;
+    }
+
+    &__Extra {
+        color: #7C7E7F;
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding-top: 0.4rem;
+        padding-right: 1.6rem;
+
+        & > * {
+           &:not(:last-child) {
+            margin-right: 0.4rem;
+           }
+           display: inline-block;
+           padding: 0.8rem;
+        }
+    }
+}
+
+.MakeComment {
+    margin: 2.4rem 32px 2.4rem 0;
+    background-color: $color-white; // TODO: remove
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CommentFilter {
+    background-color: rgba(orangered, 0.1); // TODO: remove
+    height: 4rem;
+    margin-right: 32px;
+    border-bottom: solid 1px #343536;
+    padding-bottom: 4px;
+}
