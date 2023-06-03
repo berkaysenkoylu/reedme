@@ -8,6 +8,8 @@
     &:not(:last-child) {
         margin-bottom: 2rem;
     }
+
+    margin-top: 1.5rem;
 }
 
 .LeftHandSide {
@@ -83,4 +85,8 @@
         align-items: center;
         background-color: $color-white; // TODO: remove later
     }
+}
+
+.MarginRight0 {
+    margin-right: 0;
 }

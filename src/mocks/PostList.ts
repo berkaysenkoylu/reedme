@@ -26,7 +26,42 @@ export const postList: Post[] = [
                 upvote: 9,
                 downvote: 0,
                 date: 1685617060518,
-                responses: []
+                responses: [
+                    {
+                        id: "c2",
+                        content: "Dry firing it like that would make it shatter.",
+                        author: "Yolo-king",
+                        upvote: 4,
+                        downvote: 0,
+                        date: 1685611000518,
+                        responses: []
+                    },
+                    {
+                        id: "c2",
+                        content: "Dry firing it like that would make it shatter.",
+                        author: "Yolo-king",
+                        upvote: 4,
+                        downvote: 0,
+                        date: 1685611000518,
+                        responses: [{
+                            id: "c2",
+                            content: "Dry firing it like that would make it shatter.",
+                            author: "Yolo-king",
+                            upvote: 4,
+                            downvote: 0,
+                            date: 1685611000518,
+                            responses: [{
+                                id: "c2",
+                                content: "Dry firing it like that would make it shatter.",
+                                author: "Yolo-king",
+                                upvote: 4,
+                                downvote: 0,
+                                date: 1685611000518,
+                                responses: []
+                            }]
+                        }]
+                    }
+                ]
             }
         ]
     },

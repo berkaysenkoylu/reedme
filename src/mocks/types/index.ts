@@ -8,10 +8,20 @@ interface PostBase {
     date: number
 }
 
-type Comment = PostBase & {
-    responses?: Comment[]
+interface CommentBase {
+    id: string
+    content: string
+    author: string
+    upvote: number
+    downvote: number
+    date: number
+    responses: CommentBase[]
+}
+
+export interface CommentType extends PostBase {
+    responses?: CommentBase[]
 }
 
 export interface Post extends PostBase {
-    comments: Comment[]
+    comments: CommentType[]
 }

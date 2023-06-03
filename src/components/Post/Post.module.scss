@@ -9,10 +9,10 @@ $post-bg-color: #1A1A1B;
     width: 96rem;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    margin: 8rem auto 0 auto;
+    margin: 8rem auto 4rem auto;
     padding-top: 0.8rem;
     padding-left: 4rem;
-    height: 100vh; // TODO: remove
+    padding-bottom: 4rem;
 
     &__Vote {
         background-color: orangered; // TODO: remove
